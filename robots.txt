@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://creatorflow.ca/sitemap.xml
