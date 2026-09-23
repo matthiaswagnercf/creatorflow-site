@@ -2,191 +2,320 @@
 <html lang="fr-CA">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Site pour inspecteur en bâtiment | Matthias Wagner</title>
-<meta name="description" content="Site de six pages avec réservation en ligne pour inspecteur en bâtiment au Québec, en ligne en sept jours ouvrables. 2 900 $, prix fixe. Maquette gratuite.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Site pour inspecteur en bâtiment, avec réservation en ligne | Creatorflow</title>
+<meta name="description" content="Site de six pages avec réservation en ligne et fiche Google reliée pour inspecteur en bâtiment au Québec, en ligne en sept jours ouvrables. 2 900 $, prix fixe. Un appel de 20 minutes pour commencer.">
 <link rel="canonical" href="https://creatorflow.ca/">
-<meta property="og:title" content="Site web pour inspecteur en bâtiment, en sept jours ouvrables">
-<meta property="og:description" content="Six pages, réservation en ligne, fiche Google reliée. 2 900 $, prix fixe. Maquette gratuite avant de payer. Matthias Wagner, Montréal.">
-<meta property="og:image" content="https://creatorflow.ca/assets/hotier-2026-09.png">
+<meta name="theme-color" content="#06080d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Site pour inspecteur en bâtiment, en ligne en sept jours ouvrables">
+<meta property="og:description" content="Six pages, réservation en ligne, fiche Google reliée. 2 900 $, prix fixe. Un appel de 20 minutes pour commencer. Matthias Wagner, Montréal.">
+<meta property="og:image" content="https://creatorflow.ca/assets/og-2026-09.png">
+<meta property="og:url" content="https://creatorflow.ca/">
 <meta property="og:locale" content="fr_CA">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=20260923">
 <script src="config.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"ProfessionalService","name":"Creatorflow","url":"https://creatorflow.ca/","telephone":"+1-450-540-1161","email":"matthias.wagner.cf@gmail.com","founder":{"@type":"Person","name":"Matthias Wagner"},"address":{"@type":"PostalAddress","addressLocality":"Montréal","addressRegion":"QC","addressCountry":"CA"},"areaServed":"Québec","description":"Sites de six pages avec réservation en ligne pour inspecteurs en bâtiment et entrepreneurs licenciés RBQ du Québec."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Mon neveu me ferait ça pour 500 $.","acceptedAnswer":{"@type":"Answer","text":"C'est possible, et souvent c'est correct. Dans six mois, quand il faut changer un numéro ou ajouter une zone, il n'est plus là. Plusieurs des sites d'inspecteurs que j'ai regardés n'ont pas bougé depuis longtemps. Ici, c'est compris dans le mensuel."}},
+{"@type":"Question","name":"Est-ce que le site m'appartient ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le domaine est enregistré à votre nom dès le premier jour et le site vous appartient dès la mise en ligne. Si vous arrêtez le mensuel, vous partez avec le site."}},
+{"@type":"Question","name":"Est-ce que ça marche avec mon logiciel d'inspection ?","acceptedAnswer":{"@type":"Answer","text":"Ça dépend du logiciel. Spectora, ISN, HomeGauge et Tap Inspect ont un calendrier de réservation en ligne : je le relie à votre site, en lien ou intégré, et avec certains vous confirmez ensuite le rendez-vous d'un clic. UDATA et la plupart des logiciels québécois n'en ont pas : j'installe alors un calendrier relié à votre agenda, et vous entrez le rendez-vous dans votre logiciel comme aujourd'hui. Je vérifie votre outil avant de vous promettre quoi que ce soit."}},
+{"@type":"Question","name":"Sept jours, vraiment ?","acceptedAnswer":{"@type":"Answer","text":"Sept jours ouvrables à partir du moment où j'ai vos textes et vos photos. C'est écrit dans l'entente, avec le remboursement du premier versement si je dépasse. Si votre matériel n'arrive pas, le compte ne part pas."}},
+{"@type":"Question","name":"Qui fait le travail ?","acceptedAnswer":{"@type":"Answer","text":"Moi. Le site, les textes, la mise en ligne, l'entretien et le téléphone."}}
+]}]}
+</script>
 </head>
 <body>
+<div class="lang-bar" lang="en" hidden><div class="wrap"><span>AI automation for your team?</span><a href="inbound.html">English site&nbsp;<span aria-hidden="true">→</span></a></div></div>
 
-<div class="nav"><div class="wrap">
-  <a class="logo" href="#accueil">Creatorflow</a>
-  <a class="l" href="metiers-rbq.html">Métiers RBQ</a>
-  <a class="l" href="#tarifs">Tarifs</a>
-  <a class="l" href="#maquette">Maquette gratuite</a>
-  <a class="pill" href="tel:+14505401161">Appelez-moi · 450 540-1161 <span class="arr">→</span></a>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#accueil" aria-label="Creatorflow, retour en haut"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M18.5 8.2A7.5 7.5 0 1 0 18.5 17.8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="20.6" cy="13" r="2.2" fill="#9db8ff"/></svg>Creatorflow</a>
+  <nav class="nav-links" id="menu" aria-label="Sections">
+    <a href="#compris">Ce qui est compris</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#questions">Questions</a>
+    <a href="metiers-rbq.html">Métiers RBQ</a>
+    <a href="inbound.html" lang="en">English</a>
+  </nav>
+  <a class="tel" href="tel:+14505401161"><span class="nb">450 540-1161</span></a>
+  <a class="btn sm nav-cta" href="#rendez-vous"><span class="tw"><span class="t">Réserver un appel</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+  <a class="icon-btn" href="tel:+14505401161" aria-label="Appeler Matthias au 450 540-1161"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6.6 2.8l1.6 3.6-1.7 1.3a10 10 0 0 0 5.8 5.8l1.3-1.7 3.6 1.6-.6 3a1.5 1.5 0 0 1-1.6 1.2A15.5 15.5 0 0 1 2 4.9a1.5 1.5 0 0 1 1.2-1.6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></a>
+  <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 7h14M3 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+</div></header>
+
+<main>
+<section id="accueil" class="hero glow grid-bg"><div class="wrap hero-grid">
+  <div>
+    <div class="face"><img src="assets/matthias-2026-09.jpg" alt="Matthias Wagner" width="46" height="46"><span><b>Matthias Wagner, Montréal</b><a href="tel:+14505401161"><span class="nb">450 540-1161</span></a></span></div>
+    <h1>Le client du courtier réserve pendant que vous êtes en inspection.</h1>
+    <p class="sub">Votre site d'inspecteur de six pages, avec la réservation en ligne et votre fiche Google reliée. En ligne en sept jours ouvrables.</p>
+    <div class="actions">
+      <a class="btn" href="#rendez-vous"><span class="tw"><span class="t">Réserver un appel</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="chip" href="#tarifs" style="text-decoration:none"><b>2&nbsp;900&nbsp;$</b> prix fixe</a>
+    </div>
+    <p class="note">Un appel de 20 minutes au téléphone. Ensuite, la moitié à la signature et l'autre moitié quand le site est en ligne.</p>
+  </div>
+
+  <div class="stage ui" role="img" aria-label="Illustration : un client trouve l'inspecteur sur Google, clique sur Prendre rendez-vous, et l'inspecteur reçoit la demande.">
+    <div class="ui-search s-search"><svg viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>inspecteur en bâtiment laval</div>
+    <div class="ui-card s-result">
+      <p class="ui-k">Fiche Google</p>
+      <p class="r-name">Votre entreprise d'inspection</p>
+      <p class="r-meta">Inspection préachat · Laval, Rive-Nord, Montréal</p>
+      <div class="r-btns"><span class="ui-pill">Site web</span><span class="ui-pill">Itinéraire</span><span class="ui-pill on">Prendre rendez-vous</span></div>
+      <div class="r-lines"><span class="ui-bar" style="width:92%"></span><span class="ui-bar" style="width:70%"></span></div>
+    </div>
+    <div class="ui-card s-phone"><div class="phone-scr">
+      <div class="p-top"><i></i></div>
+      <p class="p-t">Prendre rendez-vous</p>
+      <p class="ui-k">Type d'inspection</p>
+      <div class="p-field">Préachat, maison unifamiliale</div>
+      <p class="ui-k">Date souhaitée</p>
+      <div class="p-row"><span class="ui-pill">mar. 29</span><span class="ui-pill on">mer. 30</span><span class="ui-pill">jeu. 1</span></div>
+      <div class="p-send">Envoyer la demande</div>
+    </div></div>
+    <div class="ui-card s-toast">
+      <span class="t-ico"><svg viewBox="0 0 20 20" fill="none"><path d="M10 3a4.5 4.5 0 0 0-4.5 4.5c0 4-1.8 5.5-1.8 5.5h12.6s-1.8-1.5-1.8-5.5A4.5 4.5 0 0 0 10 3zM8.3 16a1.8 1.8 0 0 0 3.4 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><p class="t-h">Nouvelle demande : préachat, Laval</p><p class="t-s">mer. 30 sept., 9 h · il y a 1 min</p></span>
+    </div>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="facts reveal">
+  <div class="fact"><b>En ligne en 7 jours ouvrables</b><span>Sinon, le premier versement vous est remboursé et vous gardez le site.</span></div>
+  <div class="fact"><b>La moitié à la mise en ligne</b><span>Vous payez l'autre moitié quand le site est en ligne, pas avant.</span></div>
+  <div class="fact"><b>Le domaine à votre nom</b><span>Enregistré à votre nom dès le premier jour.</span></div>
+  <div class="fact"><b>Une personne, à Montréal</b><span>Je fais le site et je réponds au téléphone.</span></div>
 </div></div>
 
-<section id="accueil" class="hero"><div class="wrap">
-  <img class="portrait" src="assets/matthias-2026-09.jpg" alt="Matthias Wagner" width="104" height="104">
-  <div class="label">Inspecteurs en bâtiment, Québec</div>
-  <h1>Votre site d'inspecteur, avec réservation en ligne, en sept jours ouvrables.</h1>
-  <p class="sub">Six pages, la prise de rendez-vous en ligne et votre fiche Google reliée. Le prix est plus bas sur cette page. Je m'appelle Matthias Wagner, je suis à Montréal, et c'est moi qui réponds.</p>
-  <div class="ctas">
-    <a class="pill" href="tel:+14505401161">Appelez-moi · 450 540-1161 <span class="arr">→</span></a>
-    <a class="ghost" href="#maquette">ou demandez une maquette gratuite</a>
+<section class="sec"><div class="wrap">
+  <div class="head reveal">
+    <p class="eyebrow">Votre client</p>
+    <h2>Avant d'appeler, votre client vous cherche sur Google.</h2>
+    <p class="lead">Il a une promesse d'achat conditionnelle et trois ou quatre jours pour trouver un inspecteur. Le courtier lui a donné votre nom, parfois avec d'autres.</p>
   </div>
-
-  <div class="promesses">
-    <p><b>En ligne sept jours ouvrables après réception de votre matériel.</b> <span>Sinon, le premier versement vous est remboursé et vous gardez le site.</span></p>
-    <p><b>Moins de trois demandes d'inspection par le site dans les 90 premiers jours ?</b> <span>Je lance pour vous, sans frais, une campagne auprès des courtiers de vos zones et une relance de vos anciens clients.</span></p>
-  </div>
-
-  <div class="chiffres">
-    <div><div class="n">233</div><div class="t">sites d'inspecteurs regardés un par un</div></div>
-    <div><div class="n">7</div><div class="t">jours ouvrables pour la mise en ligne</div></div>
-    <div><div class="n">2 900 $</div><div class="t">prix fixe, moitié à la signature</div></div>
-    <div><div class="n">1</div><div class="t">personne, à Montréal</div></div>
-  </div>
-</div></section>
-
-<section class="tight"><div class="wrap"><div class="split">
-  <div><h2>Ce que votre client regarde</h2></div>
-  <div>
-    <p class="muted">Il a une promesse d'achat conditionnelle et trois ou quatre jours pour trouver un inspecteur. Le courtier lui a donné votre nom. Avant d'appeler, il vous cherche sur Google. Il regarde votre note, vos zones et votre délai pour le rapport, et il veut réserver le soir même, sans téléphoner.</p>
-    <p class="muted">Sur les 233 sites d'inspecteurs du Québec que j'ai regardés un par un, moins de la moitié permettent de réserver en ligne. Le courtier vous a référé, mais c'est ce qui s'affiche à ce moment-là qui conclut.</p>
-  </div>
-</div></div></section>
-
-<section id="ce-que-je-fais"><div class="wrap">
-  <div class="label">Ce que je fais</div>
-  <h2 style="max-width:760px">Six pages, écrites à partir de votre matériel, sur votre domaine.</h2>
-  <div class="two" style="margin-top:36px">
-    <ul class="plain">
-      <li><b>Accueil.</b> Ce que vous faites, où, votre note Google et un bouton pour réserver.</li>
-      <li><b>Services.</b> Types d'inspection, ce qui est couvert, durée, délai du rapport.</li>
-      <li><b>À propos.</b> Parcours, AIBQ, RBQ, assurance, années d'expérience, votre photo.</li>
-      <li><b>Contact.</b> Formulaire acheminé à votre courriel, téléphone cliquable, carte.</li>
-      <li><b>Prendre rendez-vous.</b> Calendrier en ligne relié à votre agenda.</li>
-      <li><b>Mentions légales.</b> La page de confidentialité que la Loi 25 exige.</li>
-    </ul>
-    <ul class="plain">
-      <li>Textes rédigés à partir de votre matériel et d'un appel de 30 minutes</li>
-      <li>Hébergement, certificat SSL, sauvegardes et mises à jour</li>
-      <li>Domaine enregistré à votre nom, jamais au mien</li>
-      <li>Titres, descriptions et plan du site pour que Google vous trouve dans vos villes</li>
-      <li>Fiche Google Business reliée au site</li>
-      <li>Lisible sur téléphone, où vos clients vous cherchent</li>
-    </ul>
-  </div>
-</div></section>
-
-<section id="exemple"><div class="wrap">
-  <div class="label">Exemples</div>
-  <h2 style="max-width:760px">Deux sites que j'ai faits. Cliquez sur le premier.</h2>
-  <div class="exemple" style="margin-top:36px">
-    <a class="shot" href="https://markherz.ca" target="_blank" rel="noopener" style="display:block"><img src="assets/markherz-2026-09.png" alt="Page d'accueil de markherz.ca" width="1280" height="900"></a>
-    <div class="cap"><span><b>markherz.ca</b>, professeur de guitare classique, Montréal</span><span>Site et réservation reliée à son agenda</span><span>En ligne depuis septembre 2026 · <a class="lnk" href="https://markherz.ca" target="_blank" rel="noopener">markherz.ca</a></span></div>
-  </div>
-  <div class="exemple">
-    <div class="shot"><img src="assets/hotier-2026-09.png" alt="Page d'accueil faite pour Les Inspections Hotier" width="1280" height="900"></div>
-    <div class="cap"><span><b>Les Inspections Hotier</b>, inspecteur en bâtiment, Montréal</span><span>Six pages, réservation en ligne, fiche Google reliée</span><span>Fait en septembre 2026, pas encore en ligne : il n'a pas encore transféré son domaine</span></div>
-    <p class="muted" style="margin-top:14px;font-size:15px">Les 107 avis Google sur cette page sont les siens. Il les avait avant le site.</p>
-  </div>
-</div></section>
-
-<section id="tarifs"><div class="wrap">
-  <div class="label">Tarifs</div>
-  <h2 style="max-width:760px">Deux façons de commencer. Dans les deux cas, le site est à vous.</h2>
-  <div class="tblwrap" style="margin-top:36px"><table>
-    <thead><tr><th>Au départ</th><th>Prix</th><th>Ce qui est compris</th></tr></thead>
-    <tbody>
-    <tr><td>Site complet</td><td><span class="amt">2 900 $</span><small class="dim">moitié à la signature, moitié à la mise en ligne</small></td><td>Les six pages ci-dessus, la réservation en ligne, la fiche Google reliée, le domaine à votre nom. En ligne sept jours ouvrables après réception de votre matériel. Une ronde de corrections comprise.</td></tr>
-    <tr><td>Mise à niveau</td><td><span class="amt">1 450 $</span><small class="dim">ou trois versements de 497 $</small></td><td>Vous gardez votre site. J'ajoute la prise de rendez-vous en ligne, je relie votre fiche Google et je rends le tout lisible sur téléphone. En ligne en 48 heures. Vous payez moins parce que vous fournissez plus.</td></tr>
-    </tbody>
-  </table></div>
-  <div class="tblwrap" style="margin-top:48px"><table>
-    <thead><tr><th>Chaque mois, à partir de la mise en ligne</th><th>Prix</th><th>Ce qui est compris</th></tr></thead>
-    <tbody>
-    <tr><td>Hébergement et entretien</td><td><span class="amt">149 $ <small>/ mois</small></span></td><td>Hébergement, sauvegardes, mises à jour, vos modifications quand vous en voulez, réponse à chaque avis Google en votre nom, rapport mensuel des appels et des demandes.</td></tr>
-    <tr><td>Avis, rappels et infolettre</td><td><span class="amt">297 $ <small>/ mois</small></span></td><td>Tout ce qui précède, plus une demande d'avis automatique après chaque inspection, un texto de rappel quand vous manquez un appel, un article par mois pour votre ville et une infolettre à vos clients et à vos courtiers.</td></tr>
-    </tbody>
-  </table></div>
-  <p class="note">Taxes en sus. Le mensuel commence le jour où le site est en ligne, pas avant. Le domaine est enregistré à votre nom dès le premier jour.</p>
-  <div class="anchor">Une inspection préachat se vend entre 750 et 850 $ au Québec. <b>Le site complet est payé avec quatre mandats, la mise à niveau avec deux.</b></div>
-</div></section>
-
-<section id="maquette"><div class="wrap"><div class="split">
-  <div>
-    <div class="label">Maquette gratuite</div>
-    <h2>Avant de parler d'argent, je vous montre.</h2>
-    <p class="muted">Je monte une maquette de votre page d'accueil avec votre vrai nom, vos vraies zones et vos vraies photos, à partir de votre fiche Google. Vous la regardez, puis vous me dites oui ou non. Sans frais, sans engagement. Si c'est non, je ne vous rappelle pas.</p>
-    <p class="muted">Vous préférez parler ? <a class="lnk" href="tel:+14505401161">450 540-1161</a>.</p>
-  </div>
-  <form class="form req" method="post" action="https://matthias-wagner-guitar--cf-leads-web.modal.run/lead/creatorflow" novalidate>
-    <div class="row">
-      <div class="f"><label for="nom">Votre nom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
-      <div class="f"><label for="municipalite">Entreprise ou ville</label><input id="municipalite" name="municipalite" type="text" autocomplete="organization"></div>
+  <div class="journey">
+    <div class="card reveal">
+      <div class="viz ui" role="img" aria-label="Texto d'un courtier qui recommande l'inspecteur"><div class="bubble"><small>Courtier · 18 h 42</small>Pour l'inspection, appelle Martin. Il est fiable.</div></div>
+      <div class="txt"><span class="num">01</span><h3>Le courtier donne votre nom</h3><p>Par texto, entre deux visites. Votre client ne vous connaît pas encore.</p></div>
     </div>
-    <div class="row">
-      <div class="f"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
-      <div class="f"><label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" autocomplete="email" inputmode="email" required></div>
+    <div class="card reveal">
+      <div class="viz ui" role="img" aria-label="Recherche Google du nom de l'entreprise"><div style="width:100%;max-width:260px;display:grid;gap:10px"><div class="ui-search" style="height:38px;font-size:13px"><svg viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>votre entreprise</div><div style="display:flex;gap:6px"><span class="ui-pill">Site web</span><span class="ui-pill on">Prendre rendez-vous</span></div></div></div>
+      <div class="txt"><span class="num">02</span><h3>Il vous cherche sur Google</h3><p>Il regarde votre note, vos zones et votre délai pour le rapport.</p></div>
     </div>
-    <div class="f"><label for="adresse_propriete">Lien de votre fiche Google ou de votre site actuel (facultatif)</label><input id="adresse_propriete" name="adresse_propriete" type="text" inputmode="url"></div>
-    <div class="f"><label for="message">Ce qui manque à votre présence en ligne, en une phrase (facultatif)</label><textarea id="message" name="message" rows="3"></textarea></div>
-    <div class="pot" aria-hidden="true"><label for="site_web">Site web</label><input id="site_web" name="site_web" type="text" tabindex="-1" autocomplete="off"></div>
-    <input type="hidden" name="type_inspection" value="maquette">
-    <button class="pill" type="submit">Envoyez-moi ma maquette <span class="arr">→</span></button>
-  </form>
-</div></div></section>
+    <div class="card reveal">
+      <div class="viz ui" role="img" aria-label="Calendrier de réservation, demande envoyée le soir"><div class="mini-cal"><span>lun</span><span>mar</span><span class="on">mer</span><span>jeu</span><span>ven</span><span class="cap"><span class="ui-dot"></span>21 h 12 · demande envoyée</span></div></div>
+      <div class="txt"><span class="num">03</span><h3>Il veut réserver le soir même</h3><p>Sans téléphoner. S'il ne peut pas, il essaie le nom suivant.</p></div>
+    </div>
+  </div>
+  <div class="statline reveal"><div class="big">233</div><p>sites d'inspecteurs du Québec regardés un par un. <span>Moins de la moitié permettent de réserver en ligne.</span></p></div>
+</div></section>
 
-<section><div class="wrap">
-  <div class="label">Comment ça se passe</div>
-  <h2 style="max-width:760px">Quatre étapes. Vous en faites une.</h2>
-  <div class="steps">
-    <div class="step"><div class="n">01 · QUINZE MINUTES</div><h3>Un appel</h3><p>Vous me dites ce que vous facturez, vos zones et votre logiciel de rapports. Je vous dis si je peux aider et ce que ça coûte.</p></div>
-    <div class="step"><div class="n">02 · SANS FRAIS</div><h3>La maquette</h3><p>Votre page d'accueil avec votre nom, vos zones et vos photos. Vous la regardez, puis c'est oui ou non.</p></div>
-    <div class="step"><div class="n">03 · VOTRE PART, EN UNE FOIS</div><h3>Votre matériel</h3><p>Un formulaire de deux minutes (types d'inspection, prix, zones, certifications, photos) et un appel de 30 minutes. Le compte de sept jours part quand je l'ai reçu.</p></div>
-    <div class="step"><div class="n">04 · SEPT JOURS OUVRABLES</div><h3>En ligne</h3><p>Sur votre domaine, à votre nom. Vous m'envoyez vos corrections une fois, c'est compris. Ensuite je m'occupe de l'entretien chaque mois.</p></div>
+<section id="exemple" class="sec band"><div class="wrap">
+  <div class="head reveal">
+    <p class="eyebrow">Travail</p>
+    <h2>Un site que j'ai fait, en ligne en ce moment.</h2>
+    <p class="lead">Ouvrez-le sur votre téléphone. C'est là que vos clients verront le vôtre.</p>
+  </div>
+  <div class="showcase reveal">
+    <a class="browser" href="https://markherz.ca" target="_blank" rel="noopener" style="display:block;text-decoration:none">
+      <div class="bar"><i></i><i></i><i></i><span class="url">markherz.ca</span></div>
+      <img src="assets/markherz-bureau-20260923.webp" alt="Page d'accueil de markherz.ca sur ordinateur" width="1440" height="900" loading="lazy">
+    </a>
+    <div class="device" aria-hidden="true"><img src="assets/markherz-mobile-20260923.webp" alt="" width="390" height="844" loading="lazy"></div>
+  </div>
+  <div class="work-cap reveal">
+    <div><h3>markherz.ca</h3><p>Professeur de guitare classique, Montréal. Site bilingue avec la réservation des cours reliée à son agenda.</p></div>
+    <p>En ligne depuis septembre 2026. C'est un prof de guitare. Sa réservation reliée à l'agenda, c'est celle que j'installe chez les inspecteurs.</p>
+    <a class="ghost" href="https://markherz.ca" target="_blank" rel="noopener">Voir le site <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
 </div></section>
 
-<section id="a-propos" class="apropos"><div class="wrap"><div class="split">
-  <div><img class="portrait" src="assets/matthias-2026-09.jpg" alt="Matthias Wagner, Montréal" width="750" height="750"></div>
-  <div>
-    <div class="label">Qui fait le travail</div>
+<section id="compris" class="sec"><div class="wrap">
+  <div class="head reveal">
+    <p class="eyebrow">Ce qui est compris</p>
+    <h2>Six pages, écrites à partir de votre matériel, sur votre domaine.</h2>
+  </div>
+  <div class="bento">
+    <div class="card c4 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M3 7.5h14M7.5 7.5V17" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <h3>Les six pages</h3>
+      <ul class="pages">
+        <li><em>01</em><span><b>Accueil.</b> Ce que vous faites, où, votre note Google et un bouton pour réserver.</span></li>
+        <li><em>02</em><span><b>Services.</b> Types d'inspection, ce qui est couvert, durée, délai du rapport.</span></li>
+        <li><em>03</em><span><b>À propos.</b> Parcours, AIBQ, RBQ, assurance, années d'expérience, votre photo.</span></li>
+        <li><em>04</em><span><b>Contact.</b> Formulaire acheminé à votre courriel, téléphone cliquable, carte.</span></li>
+        <li><em>05</em><span><b>Prendre rendez-vous.</b> Calendrier en ligne relié à votre agenda.</span></li>
+        <li><em>06</em><span><b>Mentions légales.</b> La page de confidentialité que la Loi 25 exige.</span></li>
+      </ul>
+    </div>
+    <div class="card c2 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="13" rx="2.5" stroke="currentColor" stroke-width="1.5"/><path d="M3 8h14M7 2.5v3M13 2.5v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <h3>Réservation en ligne</h3>
+      <p>Votre client choisit une plage libre le soir, sans vous appeler. Le calendrier est relié à votre agenda. Si votre logiciel d'inspection a le sien (Spectora, ISN, HomeGauge, Tap Inspect), je relie plutôt celui-là.</p>
+    </div>
+    <div class="card c2 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><path d="M10 18s5.5-5 5.5-9.5a5.5 5.5 0 1 0-11 0C4.5 13 10 18 10 18z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="10" cy="8.5" r="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <h3>Fiche Google reliée</h3>
+      <p>Votre fiche d'établissement Google mène au site et à son bouton de réservation.</p>
+    </div>
+    <div class="card c4 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><rect x="4" y="8.5" width="12" height="8.5" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 8.5V6a3 3 0 0 1 6 0v2.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <h3>Ce qui vient avec le site</h3>
+      <p>L'hébergement, les sauvegardes et les mises à jour viennent ensuite avec le mensuel, à partir de la mise en ligne.</p>
+      <div class="foot tags"><span>Domaine à votre nom</span><span>Certificat SSL</span><span>Titres et descriptions pour Google</span><span>Plan du site</span><span>Lisible sur téléphone</span></div>
+    </div>
+    <div class="card c3 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><path d="M13.5 3.5l3 3L7 16H4v-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      <h3>Les textes, je les écris</h3>
+      <p>À partir de votre matériel et d'un appel de 30 minutes. Vous relisez et vous m'envoyez vos corrections une fois.</p>
+    </div>
+    <div class="card c3 reveal">
+      <div class="ico"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2l6 2.5v5c0 4-2.7 6.8-6 8.5-3.3-1.7-6-4.5-6-8.5v-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      <h3>Loi 25</h3>
+      <p>La politique de confidentialité exigée au Québec, rédigée pour votre entreprise et publiée avec le site.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="tarifs" class="sec band"><div class="wrap">
+  <div class="head">
+    <p class="eyebrow">Tarifs</p>
+    <h2>Deux façons de commencer. Dans les deux cas, le site est à vous.</h2>
+  </div>
+  <div class="plans">
+    <div class="card plan lead-plan">
+      <p class="p-name"><b>Site complet</b><span class="flag">7 jours ouvrables</span></p>
+      <p class="price">2&nbsp;900&nbsp;$</p>
+      <p class="terms">Prix fixe. Moitié à la signature, moitié à la mise en ligne.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Les six pages, écrites pour vous</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>La réservation en ligne et votre fiche Google reliée</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Le domaine à votre nom dès le premier jour</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>En ligne sept jours ouvrables après réception de votre matériel</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Un tour de corrections compris</li>
+      </ul>
+      <a class="btn" href="#rendez-vous"><span class="tw"><span class="t">Réserver un appel</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <div class="card plan">
+      <p class="p-name"><b>Mise à niveau</b><span class="flag">48 heures</span></p>
+      <p class="price">1&nbsp;450&nbsp;$</p>
+      <p class="terms">ou trois versements de 497&nbsp;$</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Vous gardez votre site actuel</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>J'ajoute la prise de rendez-vous en ligne</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Je relie votre fiche Google</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Je rends le tout lisible sur téléphone</li>
+      </ul>
+      <p class="small" style="margin:0 0 24px">Moins cher, parce que votre site existe déjà.</p>
+      <a class="ghost" href="#rendez-vous">Parler de la mise à niveau</a>
+    </div>
+  </div>
+  <div class="guarantee">
+    <span class="ico"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2l6 2.5v5c0 4-2.7 6.8-6 8.5-3.3-1.7-6-4.5-6-8.5v-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <p><b>Site complet : en ligne sept jours ouvrables après réception de votre matériel.</b> Sinon, le premier versement vous est remboursé et vous gardez le site. C'est écrit dans l'entente.</p>
+  </div>
+  <div class="card monthly">
+    <div>
+      <p class="m-head">Chaque mois, à partir de la mise en ligne</p>
+      <p class="p-name"><b style="font-size:19px">Avis, rappels et infolettre</b><span class="flag">Ce que je conseille</span></p>
+      <p class="price">297&nbsp;$ <small>/ mois</small></p>
+      <ul class="checks" style="margin:18px 0 0">
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Tout l'entretien du forfait à 149&nbsp;$</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Une demande d'avis Google automatique après chaque inspection</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Un texto de rappel quand vous manquez un appel</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Un article par mois pour votre ville</li>
+        <li><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Une infolettre à vos clients et à vos courtiers</li>
+      </ul>
+    </div>
+    <div class="alt-plan">
+      <p class="m-head">Ou, plus simple</p>
+      <p class="p-name" style="margin:0 0 14px"><b style="font-size:17px;color:var(--ink)">Hébergement et entretien</b></p>
+      <p class="price">149&nbsp;$ <small>/ mois</small></p>
+      <p style="margin-top:14px">Hébergement, sauvegardes, mises à jour, vos modifications quand vous en voulez, une réponse à chaque avis Google en votre nom et un rapport mensuel des demandes reçues par le site.</p>
+    </div>
+  </div>
+  <div class="fine"><span>Taxes en sus. Le mensuel commence le jour où le site est en ligne, pas avant.</span><span>Si vous arrêtez le mensuel, vous partez avec le site.</span></div>
+  <p class="anchor">Une inspection préachat se vend entre 750 et 850&nbsp;$ au Québec. <b>Le site complet se paie avec quatre mandats, la mise à niveau avec deux.</b></p>
+</div></section>
+
+<section id="rendez-vous" class="sec glow"><div class="wrap">
+  <div class="head center">
+    <p class="eyebrow">Réserver</p>
+    <h2>Choisissez un moment.</h2>
+    <p class="lead">Un appel de 20 minutes : je vous appelle à l'heure choisie. On regarde ce que vous avez aujourd'hui, vos zones et ce que vous facturez, et je vous dis ce que je ferais.</p>
+  </div>
+  <div class="b-step b-cal b-wide">
+    <div class="cal-box" data-embed="calendly" data-campaign="accueil-embed" data-merci="merci.html?p=accueil" hidden></div>
+    <div id="sans-calendrier" class="b-alt"><a class="btn" data-calendly="accueil" href="https://calendly.com/matthias-wagner-cf/appel-decouverte-creatorflow?utm_source=site&amp;utm_campaign=accueil" target="_blank" rel="noopener"><span class="tw"><span class="t">Ouvrir mon agenda</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+    <p class="b-tel">Vous préférez appeler ? <a class="lnk" href="tel:+14505401161"><span class="nb">450 540-1161</span></a></p>
+  </div>
+</div></section>
+
+<section class="sec band"><div class="wrap">
+  <div class="head reveal">
+    <p class="eyebrow">Comment ça se passe</p>
+    <h2>Quatre étapes. Votre matériel, vous le donnez une seule fois.</h2>
+  </div>
+  <ol class="steps four">
+    <li class="reveal"><span class="node">01</span><div><p class="tag">Au téléphone</p><h3>Un appel</h3><p>Vous me dites ce que vous facturez, vos zones et votre logiciel de rapports. Je vous dis ce que je ferais.</p></div></li>
+    <li class="reveal you"><span class="node">02</span><div><p class="tag">Votre part, en une fois</p><h3>Votre matériel</h3><p>Un formulaire de deux minutes et un appel de 30 minutes. Le compte de sept jours part quand je l'ai reçu.</p></div></li>
+    <li class="reveal"><span class="node">03</span><div><p class="tag">Sept jours ouvrables</p><h3>En ligne</h3><p>Sur votre domaine, à votre nom. Un tour de corrections compris.</p></div></li>
+    <li class="reveal opt"><span class="node">04</span><div><p class="tag">Chaque mois</p><h3>L'entretien</h3><p>Hébergement, avis et mises à jour, à partir de la mise en ligne.</p></div></li>
+  </ol>
+</div></section>
+
+<section id="a-propos" class="sec"><div class="wrap founder">
+  <figure class="photo reveal" style="margin:0"><img src="assets/matthias-2026-09.jpg" alt="Matthias Wagner" width="750" height="750" loading="lazy"><figcaption>Montréal</figcaption></figure>
+  <div class="reveal">
+    <p class="eyebrow">Qui fait le travail</p>
     <h2>Creatorflow, c'est moi, Matthias Wagner.</h2>
-    <p>Je suis à Montréal. Avant de faire des sites, j'ai vendu en personne pendant des années : de l'assurance au téléphone, puis des contrats de peinture porte à porte, 60 à 70 000 $ de contrats dans mes neuf premiers mois à mon compte. Je sais ce que c'est, un client qui vous cherche et ne vous trouve pas.</p>
-    <p>J'ai regardé un par un 233 sites d'inspecteurs du Québec avant de fixer ce forfait. Je fais le site, les textes, la mise en ligne, l'entretien, et je réponds au téléphone. Quand un projet demande une deuxième paire de mains, je vous le dis.</p>
-    <p class="coord"><a href="tel:+14505401161">450 540-1161</a><br><a href="mailto:matthias.wagner.guitar@gmail.com">matthias.wagner.guitar@gmail.com</a></p>
+    <p>Avant de faire des sites, j'ai vendu pendant des années : de l'assurance au téléphone, puis des contrats de peinture porte à porte, 60 à 70&nbsp;000&nbsp;$ de contrats dans mes neuf premiers mois à mon compte.</p>
+    <p>J'ai regardé un par un 233 sites d'inspecteurs du Québec avant de fixer ce forfait. Je fais le travail moi-même, du premier texte à l'entretien. Quand un projet demande une deuxième paire de mains, je vous le dis.</p>
+    <div class="contact"><a class="ghost" href="tel:+14505401161"><span class="nb">450 540-1161</span></a><a class="ghost" href="mailto:matthias.wagner.cf@gmail.com">matthias.wagner.cf@gmail.com</a></div>
   </div>
+</div></section>
+
+<section id="questions" class="sec band"><div class="wrap faq">
+  <div class="side">
+    <p class="eyebrow">Questions</p>
+    <h2>Ce qu'on me demande au téléphone.</h2>
+    <p>Une autre question ? <a class="lnk" href="tel:+14505401161"><span class="nb">450 540-1161</span></a></p>
+  </div>
+  <div>
+    <details><summary>Mon neveu me ferait ça pour 500&nbsp;$.</summary><p>C'est possible, et souvent c'est correct. Dans six mois, quand il faut changer un numéro ou ajouter une zone, il n'est plus là. Plusieurs des sites d'inspecteurs que j'ai regardés n'ont pas bougé depuis longtemps. Ici, c'est compris dans le mensuel.</p></details>
+    <details><summary>Est-ce que le site m'appartient ?</summary><p>Oui. Le domaine est enregistré à votre nom dès le premier jour et le site vous appartient dès la mise en ligne. Si vous arrêtez le mensuel, vous partez avec le site.</p></details>
+    <details><summary>Est-ce que ça marche avec mon logiciel d'inspection ?</summary><p>Ça dépend du logiciel. Spectora, ISN, HomeGauge et Tap Inspect ont un calendrier de réservation en ligne : je le relie à votre site, en lien ou intégré, et avec certains vous confirmez ensuite le rendez-vous d'un clic. UDATA et la plupart des logiciels québécois n'en ont pas : j'installe alors un calendrier relié à votre agenda, et vous entrez le rendez-vous dans votre logiciel comme aujourd'hui. Je vérifie votre outil avant de vous promettre quoi que ce soit.</p></details>
+    <details><summary>Sept jours, vraiment ?</summary><p>Sept jours ouvrables à partir du moment où j'ai vos textes et vos photos. C'est écrit dans l'entente, avec le remboursement du premier versement si je dépasse. Si votre matériel n'arrive pas, le compte ne part pas.</p></details>
+    <details><summary>Qui fait le travail ?</summary><p>Moi. Le site, les textes, la mise en ligne, l'entretien et le téléphone.</p></details>
+  </div>
+</div></section>
+
+<section id="fin" class="closing"><div class="wrap"><div class="panel">
+  <p class="eyebrow">20 minutes au téléphone</p>
+  <h2>Parlons de votre site.</h2>
+  <p class="lead">Vous me dites ce que vous facturez et où vous travaillez. Je vous dis ce que je ferais et ce que ça coûte.</p>
+  <div class="actions"><a class="btn" href="#rendez-vous"><span class="tw"><span class="t">Réserver un appel</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+  <p class="price-line">Site complet 2&nbsp;900&nbsp;$, prix fixe. Mise à niveau 1&nbsp;450&nbsp;$. Taxes en sus.</p>
 </div></div></section>
-
-<section id="questions"><div class="wrap col">
-  <div class="label">Questions</div>
-  <details><summary>Mon neveu me ferait ça pour 500 $.</summary><p>C'est possible, et souvent c'est correct. Dans six mois, quand il faut changer un numéro ou ajouter une zone, il n'est plus là. C'est pour ça que tant de sites d'inspecteurs que j'ai regardés sont figés depuis des années. Ici, c'est compris dans le mensuel.</p></details>
-  <details><summary>Est-ce que le site m'appartient ?</summary><p>Oui. Le domaine est enregistré à votre nom dès le premier jour et le site vous appartient dès la mise en ligne. Si vous arrêtez le mensuel, vous partez avec le site.</p></details>
-  <details><summary>Ça rentre dans mon logiciel d'inspection ?</summary><p>Si votre logiciel offre un calendrier de réservation (Spectora, ISN, HomeGauge, Tap Inspect), je le branche sur le site, c'est compris. Sinon, je mets en place un calendrier en ligne relié à votre agenda et un formulaire acheminé à votre courriel.</p></details>
-  <details><summary>Sept jours, vraiment ?</summary><p>Sept jours ouvrables à partir du moment où j'ai vos textes et vos photos. C'est écrit dans l'entente, avec le remboursement du premier versement si je dépasse. Si votre matériel n'arrive pas, le compte ne part pas.</p></details>
-  <details><summary>Qui fait le travail ?</summary><p>Moi. Le site, les textes, la mise en ligne, l'entretien et le téléphone.</p></details>
-</div></section>
-
-<section id="rendez-vous" class="closing"><div class="wrap">
-  <h2>Quinze minutes, quand ça vous convient.</h2>
-  <p>Pas de formulaire avant. Vous me dites ce que vous facturez et vos zones, je vous dis ce que je ferais et ce que ça coûte.</p>
-  <div class="cal-box" hidden></div>
-  <div id="sans-calendrier" class="ctas">
-    <a class="pill" href="tel:+14505401161">Appelez-moi · 450 540-1161 <span class="arr">→</span></a>
-    <a class="ghost" data-calendly="accueil" href="https://calendly.com/matthias-wagner-cf/meeting-with-matthias?utm_source=site&utm_campaign=accueil" target="_blank" rel="noopener">ou choisissez un moment dans mon agenda</a>
-  </div>
-</div></section>
+</main>
 
 <footer><div class="wrap">
-  <span>Creatorflow · Matthias Wagner · Montréal · <a href="tel:+14505401161">450 540-1161</a></span>
-  <span><a href="mailto:matthias.wagner.guitar@gmail.com">matthias.wagner.guitar@gmail.com</a> · <a href="metiers-rbq.html">Métiers RBQ</a> · <a href="mentions-legales.html">Mentions légales</a> · © <span data-annee>2026</span></span>
+  <div class="foot-grid">
+    <div class="about"><a class="logo" href="#accueil"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M18.5 8.2A7.5 7.5 0 1 0 18.5 17.8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="20.6" cy="13" r="2.2" fill="#9db8ff"/></svg>Creatorflow</a><p>Sites avec réservation en ligne pour les inspecteurs en bâtiment et les entrepreneurs licenciés RBQ du Québec. Une personne, à Montréal.</p></div>
+    <div><h4>Offres</h4><ul><li><a href="index.html">Inspecteurs en bâtiment</a></li><li><a href="metiers-rbq.html">Entrepreneurs RBQ</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="tel:+14505401161"><span class="nb">450 540-1161</span></a></li><li><a href="mailto:matthias.wagner.cf@gmail.com">Courriel</a></li></ul></div>
+    <div><h4>Légal</h4><ul><li><a href="mentions-legales.html">Mentions légales</a></li></ul></div>
+  </div>
+  <div class="foot-bottom"><span>© <span data-annee>2026</span> Creatorflow · Matthias Wagner</span><span>Montréal, Québec</span></div>
 </div></footer>
 
-<div class="sticky-cta"><a class="pill" href="tel:+14505401161">Appelez-moi · 450 540-1161 <span class="arr">→</span></a></div>
+<div class="sticky-cta hide" data-cacher="#accueil,#rendez-vous"><a class="btn" href="#rendez-vous"><span class="tw"><span class="t">Réserver un appel</span></span><span class="arr"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a><a class="s-tel" href="tel:+14505401161"><span class="nb">450 540-1161</span></a></div>
 
-<script src="site.js"></script>
+<script src="site.js?v=20260923"></script>
 </body>
 </html>
